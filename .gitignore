@@ -827,3 +827,8 @@ $RECYCLE.BIN/
 
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio
+
+# images: jpg, png
+*.jpg
+*.jpeg
+*.png
