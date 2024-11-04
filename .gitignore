@@ -832,3 +832,7 @@ $RECYCLE.BIN/
 *.jpg
 *.jpeg
 *.png
+
+# videos: mp4, avi
+*.mp4
+*.avi
