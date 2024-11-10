@@ -836,3 +836,7 @@ $RECYCLE.BIN/
 # videos: mp4, avi
 *.mp4
 *.avi
+
+# csproj, sln
+*.csproj
+*.sln
