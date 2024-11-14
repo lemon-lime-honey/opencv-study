@@ -840,3 +840,6 @@ $RECYCLE.BIN/
 # csproj, sln
 *.csproj
 *.sln
+
+# models
+models/
