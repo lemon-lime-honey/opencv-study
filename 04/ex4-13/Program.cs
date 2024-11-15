@@ -18,7 +18,7 @@ namespace ex4_13
         
         static void Event(MouseEventTypes @event, int x, int y, MouseEventFlags flags, IntPtr userdata)
         {
-            Mat data = new Mat(userdata);
+            Mat data = Mat.FromNativePointer(userdata);
 
             if (flags == MouseEventFlags.LButton)
             {
