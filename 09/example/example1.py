@@ -35,7 +35,6 @@ def style_transfer(model_path, image):
     model.setInput(input_blob)
 
     blob_name = model.getUnconnectedOutLayersNames()
-    print(blob_name)
     output_blob = model.forward(blob_name[0])
 
     dst = output_blob[0].transpose((1, 2, 0))
