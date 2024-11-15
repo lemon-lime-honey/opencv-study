@@ -16,8 +16,8 @@ namespace Ex5_5
 
             Cv2.CvtColor(src, hsv, ColorConversionCodes.BGR2HSV);
 
-            Cv2.InRange(hsv, new Scalar(0, 100, new Scalar(5, 255, 255), lower_red));
-            Cv2.InRange(hsv, new Scalar(170, 100, new Scalar(179, 255, 255), upper_red));
+            Cv2.InRange(hsv, new Scalar(0, 100), new Scalar(5, 255, 255), lower_red);
+            Cv2.InRange(hsv, new Scalar(170, 100), new Scalar(179, 255, 255), upper_red);
             Cv2.AddWeighted(lower_red, 1.0, upper_red, 1.0, 0.0, added_red);
 
             Cv2.BitwiseAnd(hsv, hsv, red, added_red);
