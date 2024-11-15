@@ -8,7 +8,7 @@ namespace Ex5_17
         static void Main(string[] args)
         {
             Mat src = Cv2.ImRead(@"Resources/image.jpeg", ImreadModes.Grayscale);
-            Mat kernel = new Mat(3, 3, MatType.CV_32FC1, new float[] {
+            Mat kernel = Mat.FromPixelData(3, 3, MatType.CV_32FC1, new float[] {
                 -1, 0, 1,
                 -2, 0, 2,
                 -1, 0, 1
