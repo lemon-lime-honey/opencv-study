@@ -837,8 +837,7 @@ $RECYCLE.BIN/
 *.mp4
 *.avi
 
-# csproj, sln
-*.csproj
+# sln
 *.sln
 
 # models
