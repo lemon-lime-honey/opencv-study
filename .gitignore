@@ -842,3 +842,6 @@ $RECYCLE.BIN/
 
 # models
 models/
+
+# tessdata
+tessdata/
