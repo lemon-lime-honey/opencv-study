@@ -19,7 +19,7 @@ namespace ex4_17
 
         private static void Event(int pos, IntPtr userdata)
         {
-            Mat color = new Mat(userdata);
+            Mat color = Mat.FromNativePointer(userdata);
             color.SetTo(new Scalar(pos, pos, pos));
             Cv2.ImShow("Palette", color);
         }
